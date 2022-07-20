@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding-bottom: 20px;
+}
+header {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+#shadow {
+  text-shadow: 1px 2px 2px grey;
+  padding-bottom: 10px;
+}
+.content {
+  display: grid;
+  Width: 30%;
+  Border: 4px Solid Black;
+  Padding: 40px;
+  Margin: Auto;
+  Background: #fff;
+  grid-gap: 2em;
+  padding-bottom: 10px;
+
+}
+.act>a {
+  padding-left: 20px;
+}
+.activities>div {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 20% 20% 20% 20%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h3 {
+  padding-bottom: 20px;
+}
+p {
+  text-align: justify;
+}
+
+figure>p,img{
+  transition: .6s;
+  /* animation-duration: 2s;
+  animation-name: img;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  text-align: center;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+/* img:hover {
+  width: 75%;
+} */
+
+/* @keyframes img {
+  from {
+font-size: 16px; }
+  to {
+    font-size: 18px;
+  }
+} */
