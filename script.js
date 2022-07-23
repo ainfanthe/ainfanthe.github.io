@@ -1,9 +1,8 @@
-var typed = new Typed('.typed', {
+const typed = new Typed('.typed', {
 	strings: [
-		'<b class="title"> Webpage</b>',
-		'<b class="title">Curriculum</b>'
+		'<b class="title">Homepage</b>',
+		'<b class="title">Scriptorium</b>'
 	],
-	stringsElement: '#cadenas-texto',
 	typeSpeed: 75,
 	startDelay: 100,
 	backSpeed: 75,
@@ -13,6 +12,6 @@ var typed = new Typed('.typed', {
 	loop: true,
 	loopCount: false,
 	showCursor: true,
-	cursorChar: '|',
+	cursorChar: '_',
 	contentType: 'html',
 });
