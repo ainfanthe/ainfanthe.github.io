@@ -17,7 +17,8 @@ header {
   padding-bottom: 10px;
 }
 .content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   Width: 30%;
   Border: 4px Solid Black;
   Padding: 40px;
@@ -27,21 +28,16 @@ header {
   padding-bottom: 10px;
 
 }
-.act>a {
-  padding-left: 20px;
-}
-.activities>div {
+.act {
   display: grid;
-  gap: 2em;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 25% 30% 30% 20%;
+  align-content: center;
 }
 a {
   text-decoration: none;
   color: black;
 }
-h3 {
-  padding-bottom: 20px;
-}
+
 p {
   text-align: justify;
 }
@@ -69,3 +65,4 @@ font-size: 16px; }
     font-size: 18px;
   }
 } */
+
