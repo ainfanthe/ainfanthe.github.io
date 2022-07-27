@@ -1,11 +1,49 @@
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-grey: #64748b;
+}
+
+.dark-theme {
+  --clr-bcg2: #222;
+  --clr-bcg: #1A1A1B;
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+  --clr-grey: #cbd5e1;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body{
+  background: var(--clr-bcg);
+  transition: all 0.3s linear;
   padding-bottom: 20px;
 }
+.nav-center {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.btn {
+  background: var(--clr-primary);
+  color: var(--clr-bcg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
 header {
+  color: var(--clr-font);
   text-align: center;
   padding-bottom: 1em;
   padding-top: 1em;
@@ -17,15 +55,18 @@ header {
   padding-bottom: 10px;
 }
 .content {
+  border-radius: 20px;
+  box-shadow: 6px 7px 12px #131213;
   display: flex;
   flex-direction: column;
   Width: 30%;
-  Border: 4px Solid Black;
   Padding: 40px;
   Margin: Auto;
   Background: #fff;
   grid-gap: 2em;
   padding-bottom: 10px;
+  color: var(--clr-font);
+  background: var(--clr-bcg2);
 
 }
 .act {
@@ -35,8 +76,9 @@ header {
   padding-bottom: 10px;
 }
 a {
+
   text-decoration: none;
-  color: black;
+  color: var(--clr-font);
 }
 h3 {
   padding-bottom: 20px;
