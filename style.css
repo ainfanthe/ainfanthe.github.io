@@ -61,16 +61,18 @@ a {
   grid-template-columns: 25% 25% 25% 25%;
 }
 
-.grid .sidebar {
+/* .grid .sidebar {
   grid-column: 3/4;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   grid-row: span 2;
-}
+} */
 
 .grid .footer {
+  display: flex;
+  flex-direction:column;
   grid-column: span 3;
   text-align: center;
 }
