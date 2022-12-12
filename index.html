@@ -1,77 +1,157 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="resume">
-      <header>
-        <p>Andrés</p>
-        <p>Hernández</p>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>mynd.scrpium</title>
+      <style>
+         @font-face {
+         font-family: antique;
+         src: url(./LinLibertine_R.ttf);
+         }
+         ::selection {
+         background: gold;
+         color: black;
+         }
+         .subt_content {
+         -webkit-column-count: 3;
+         -moz-column-count: 3;
+         column-count: 3;
+         text-align: justify;
+         padding-bottom: 20px;
+         }
+         .gfg {
+         text-align: left;
+         font-size: 40px;
+         }
+         .susdot {
+         margin:0;
+         text-align: left;
+         font-size: 30px;
+         color:#000
+         }
+         .gfgg {
+         text-align: left;
+         font-size: 30px;
+         }
+         .subt {
+         text-align: left;
+         }
+         * { word-wrap:break-word !important; font-family: antique;
+         margin: 0; padding: 0; }
+         @media (prefers-color-scheme: light) {
+         h1 { margin: 3ex 0 1ex 0; width: 100%; background-color: #eee}
+         }
+         body { margin-left: auto; margin-right: auto; margin-top: 1ex; margin-bottom: 1ex; width: 100ex; padding: 10px; }
+         #header #nav {
+         padding: 10px;
+         color: #2bbc8a;
+         letter-spacing: 0.01em;
+         }
+         #header #nav ul {
+         margin: 0;
+         padding: 0;
+         list-style-type: none;
+         line-height: 15px;
+         }
+         #header #nav ul a {
+         text-decoration: none;
+         margin-right: 15px;
+         color: #800080;
+         }
+         #header #nav ul a:hover {
+         color: #fff;
+         background: #000;
+         background-position: bottom;
+         background-size: 100% 6px;
+         background-repeat: repeat-x;
+         }
+         a {
+         text-decoration: none;
+         }
+         a:hover {
+         color: #fff;
+         background: #000;
+         }
+         #header #nav ul li {
+         display: inline-block;
+         margin-right: 15px;
+         border-right: 1px dashed;
+         border-color: #000;
+         vertical-align: middle;
+         }
+         #header #nav ul .icon {
+         display: none;
+         }
+         #header #nav ul li:last-child {
+         margin-right: 0;
+         border-right: 0;
+         }
+         #header #nav ul li:last-child a {
+         margin-right: 0;
+         }
+         #tittle {color: #000; background: #fff; text-decoration: none; }
+         nav { margin: 1ex 0; background: #000; }
+         nav ul { list-style: none; position: relative; display: inline-block; }
+         }
+      </style>
+   </head>
+   <body>
+      <header id="header">
+         <div class="gfgg" style="margin:0; width: 100%; background-color: #000"> <a href="#" style="color: #000; background: #fff; text-decoration: none;padding:10px;">mynd dot scriptorium</a></div>
+         <div class="gfg" > <span href="#" style="background: gold"> Principium indiscernibilium</span></div>
+         <div class="subt">
+        Basta el espacio de una lápida para dejar en musgo encuadernada mi propia existencia
+         </div>
+         <div class="susdot">. . .</div>
+         <div id="nav" align="left">
+            <ul>
+               <li><a href="#">directorio</a></li>
+               <li><a href="#">blog</a></li>
+               <li><a href="#">acerca de</a></li>
+               <li><a href="#">???</a></li>
+            </ul>
+         </div>
+         <nav>
+            <ul>
+            </ul>
+         </nav>
       </header>
-      <hr>
-      <main class="content">
-        <h3>Resume</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h3>Educación</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-        <div class="work">
-          <ul>
-            <li><span>Ing. de Sistemas y Computación</span><small>Universidad Nacional de Colombia</small><small>Jan 2021 - Now</small></li>
-            <li><span>Asistencia Administrativa</span><small>Servicio Nacional de Aprendizaje</small><small>Jan 2018 - Dec 2020</small></li>
-          </ul>
-        </div>
-        <h3>Experiencia profesional</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br>
-          <div class="work">
+      <section id="about">
+         <div class="gfg" style="margin:0; width: 100%; background-color: #000"><a href="#" style="color: #000; background: #fff; text-decoration: none;padding:5px;">Introducción</a></div>
+         <div class="subt" style="padding-bottom: 20px;">
+            Webapge personal
+         </div>
+         <div class="subt_content">
+            Lugar en el cual
+            esputar { ideas } de indole variada que por mi cráneo se vean contenidas,
+            de manera tal que la existencia de las mismas de un papel higiénico no disten
+            mucho. Forma por la cual explayar de ludica manera mi propio horizonte: improperios e invectivas.
+            Ha sido desarrollado a fin de lograr mediante entretenida praxis sintetizar de mejor manera lo que en la web hallase plasmando o escrito [...], la concepción o primum mobile que dio lugar al desarrollo del sitio no ha sido más que el interés de fundamentar en praxis aquellas endebles nociones que en algunos campos percibía, junto con una levemente apabullante necesidad de dar con un lugar en el que de la misma manera pudiese ofrecerme de entretenida manera escritos que durante autognosis hallan sido interpelados. No hay aún objetivo o rumbo claro.
+         </div>
+         <div class="" align="left" style="background:lightgrey;color: #000; border-radius: 5px; padding:5px">
+          <code>Cita diaria: as our emblem and coat of arms, I propose a tree mightily shaken by the wind, but still bearing its ruddy fruit on every branch; with the motto Conquassata sed ferax.</code>
+         </div>
+         <img src="img1.png" style="padding:10px">
+      </section>
+      <nav>
+         <ul>
+         </ul>
+      </nav>
+      <section>
+        <div class="gfg" style="margin:0; width: 100%; background-color: #000"><a href="#" style="color: #000; background: #fff; text-decoration: none;padding:5px;">Desarrollo</a></div>
+         <div class="subt" style="padding-bottom: 20px;">
+            Proyectos o cosas interesantes en las que he trabajado
+         </div>
+         <div class="">
             <ul>
-              <li><span>Front-end Web Designer</span><small>Apr 2016 - Now</small></li>
-              <li><span>Design Assistant</span><small>Mar 2015 - Dec 2015</small></li>
-              <li><span>Design Assistant (Part-time)</span><small>Oct 2014 - Jul 2015</small></li>
+               <li><a href="#">Student management system:</a> CRUD using SQLite3 and PyQt5</li>
+               <li><a href="#">Matlab tic tac toe</a>: simple implementation of the traditional Tic Tac Toe in a Matlab 3 x 3 matrix</li>
+               <li><a href="#">Python writing: </a> practical Python guide structured in lecture notes </li> <br>
+                <li> <a href="#"> Etcétera [.  .  .]</a> </li>
             </ul>
-          </div>
-        <h3>Competencias</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <br>
-          <div class="skills-prog">
-            <h4><i class="fa fa-code"></i>Habilidades en código</h4>
-            <br>
-            <ul>
-              <li data-percent="80"><span>HTML5 & PUG</span>
-                <div class="skills-bar">
-                  <div class="bar"></div>
-                </div>
-              </li>
-              <li data-percent="60"><span>CSS3 & SASS</span>
-                <div class="skills-bar">
-                  <div class="bar"></div>
-                </div>
-              </li>
-              <li data-percent="30"><span>JavaScript</span>
-                <div class="skills-bar">
-                  <div class="bar"></div>
-                </div>
-              </li>
-              <li data-percent="20"><span>MatLab</span>
-                <div class="skills-bar">
-                  <div class="bar"></div>
-                </div>
-              </li>
-              <li data-percent="30"><span>Python</span>
-                <div class="skills-bar">
-                  <div class="bar"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <h3>Contacto</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </main>
-        </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script><script  src="./script.js"></script>
-  </body>
+         </div>
+      </section>
+   </body>
 </html>
