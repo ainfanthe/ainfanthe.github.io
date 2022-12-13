@@ -8,7 +8,7 @@
       <style>
          @font-face {
          font-family: antique;
-         src: url(./fonts/LinLibertine_R.ttf);
+         src: url(./LinLibertine_R.ttf);
          }
          ::selection {
          background: gold;
@@ -57,7 +57,7 @@
          }
          #header #nav ul a {
          text-decoration: none;
-         margin-right: 15px;
+         margin-right: 10px;
          color: #000;
          }
          #header #nav ul a:hover {
@@ -70,14 +70,18 @@
          a {
          text-decoration: none;
          }
+         #urls {
+            background: #000;
+            color: #fff
+         }
          a:hover {
          color: #fff;
          background: #000;
          }
          #header #nav ul li {
          display: inline-block;
-         margin-right: 15px;
-         border-right: 1px dashed;
+         margin-right: 10px;
+         border-right: 3px double;
          border-color: #000;
          vertical-align: middle;
          }
@@ -99,18 +103,22 @@
    </head>
    <body>
       <header id="header">
-         <div class="gfgg" style="margin:0; width: 100%; background-color: #000"> <a href="#" style="color: #000; background: #fff; text-decoration: none;padding:10px;">mynd dot scriptorium</a></div>
-         <div class="gfg" > <span href="#" style="background: gold"> Principium indiscernibilium</span></div>
-         <div class="subt">
-        Basta el espacio de una lápida para dejar en musgo encuadernada mi propia existencia
-         </div>
-         <div class="susdot">. . .</div>
-         <div id="nav" align="left">
+        <div class=""><span style="background:#000; color:#fff; padding:4px">~ /index</span></div>
+         <div class="gfgg" style="margin:0; width: 100%; background-color: #000"> <a href="#" style="color: #000; background: #fff; text-decoration: none;padding:3px;">mynd dot scriptorium</a></div>
+         <div class="gfg" > <span href="#" style=""> Principium indiscernibilium</span></div>
+         <nav>
             <ul>
-               <li><a href="#">directorio</a></li>
-               <li><a href="#">blog</a></li>
-               <li><a href="#">acerca de</a></li>
+            </ul>
+         </nav>
+         <div id="nav" align="center">
+            <ul>
+               <li><a href="#">Journal</a></li>
+               <li><a href="#">About</a></li>
                <li><a href="#">???</a></li>
+               <li> <a href="#"> Wiki</a> </li>
+               <li> <a href="#">Portfolio</a> </li>
+               <li> <a href="#">Bookmarks & collections</a> </li>
+               <li> <a href="#">Codex vitae</a></li>
             </ul>
          </div>
          <nav>
@@ -119,39 +127,40 @@
          </nav>
       </header>
       <section id="about">
-         <div class="gfg" style="margin:0; width: 100%; background-color: #000"><a href="#" style="color: #000; background: #fff; text-decoration: none;padding:5px;">Introducción</a></div>
+         <div class="gfg" style="margin:0; width: 100%; background-color: #000"><a href="#" style="color: #000; background: #fff; text-decoration: none;padding:5px;">Introduction</a></div>
          <div class="subt" style="padding-bottom: 20px;">
-            Webapge personal
+            Personal webpage
          </div>
          <div class="subt_content">
             Lugar en el cual
             esputar { ideas } de indole variada que por mi cráneo se vean contenidas,
             de manera tal que la existencia de las mismas de un papel higiénico no disten
             mucho. Forma por la cual explayar de ludica manera mi propio horizonte: improperios e invectivas.
-            Ha sido desarrollado a fin de lograr mediante entretenida praxis sintetizar de mejor manera lo que en la web hallase plasmando o escrito [...], la concepción o primum mobile que dio lugar al desarrollo del sitio no ha sido más que el interés de fundamentar en praxis aquellas endebles nociones que en algunos campos percibía, junto con una levemente apabullante necesidad de dar con un lugar en el que de la misma manera pudiese ofrecerme de entretenida manera escritos que durante autognosis hallan sido interpelados. No hay aún objetivo o rumbo claro.
+            Ha sido desarrollado a fin de lograr mediante entretenida praxis sintetizar de mejor manera lo que en la web hallase plasmando o escrito [...], el { primum mobile } que dio lugar al desarrollo del sitio no ha sido más que el interés de fundamentar en praxis aquellas endebles nociones que en algunos campos percibía, junto con una levemente apabullante necesidad de dar con un lugar en el que de la misma manera pudiese ofrecerme de entretenida manera escritos que durante { autognosis } hallan sido interpelados. No hay aún objetivo o rumbo claro.
          </div>
          <div class="" align="left" style="background:lightgrey;color: #000; border-radius: 5px; padding:5px">
-          <code>Cita diaria: as our emblem and coat of arms, I propose a tree mightily shaken by the wind, but still bearing its ruddy fruit on every branch; with the motto Conquassata sed ferax.</code>
+          <code>Cita diaria: As our emblem and coat of arms, I propose a tree mightily shaken by the wind, but still bearing its ruddy fruit on every branch; with the motto Dum convellor mitescunt, or Conquassata sed ferax.</code>
          </div>
-         <img src="./images/img1.png" style="padding:10px">
       </section>
       <nav>
          <ul>
          </ul>
       </nav>
       <section>
-        <div class="gfg" style="margin:0; width: 100%; background-color: #000"><a href="#" style="color: #000; background: #fff; text-decoration: none;padding:5px;">Desarrollo</a></div>
+        <div class="gfg" style="margin:0; width: 100%; background-color: #000"><a href="#" style="color: #000; background: #fff; text-decoration: none;padding:5px;">Main research interests</a></div>
          <div class="subt" style="padding-bottom: 20px;">
-            Proyectos o cosas interesantes en las que he trabajado
+            Intereses varios a los que me pretendo dirigir, acádemicamente hablando. Sección completa en: <a href="#"> etcétera [.  .  .]</a>
          </div>
          <div class="">
             <ul>
-               <li><a href="#">Student management system:</a> CRUD using SQLite3 and PyQt5</li>
-               <li><a href="#">Matlab tic tac toe</a>: simple implementation of the traditional Tic Tac Toe in a Matlab 3 x 3 matrix</li>
-               <li><a href="#">Python writing: </a> practical Python guide structured in lecture notes </li> <br>
-                <li> <a href="#"> Etcétera [.  .  .]</a> </li>
+               <li><a href="#">Sistemas: </a>complejos, inteligentes, <a id="urls" href="#">{ teoría de sistemas e información integral }</a>, entropía, <a id="urls" href="#">{ autopoiesis }</a>, caos </li>
+               <li><a href="#">Computación: </a>low-level computing, vida artifical, computación científica, biología computacional o bioinspirada, <a id="urls" href="#">{ deducción automatizada }</a>, teoría de la computación, <a id="urls" href="#">{ filosofía de la computación }</a>, codificar </li>
             </ul>
          </div>
       </section>
+      <nav>
+         <ul>
+         </ul>
+      </nav>
    </body>
 </html>
