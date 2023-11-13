@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 5px;
+  color: #999999; 
+  font-size: 14pt; 
+  line-height: 8pt; 
+  font-family: "Verdana"; 
+  font-weight: bold; 
+  }
+
+.gfgg {
+  font-size: 15pt; 
+  font-family: verdana; 
+  font-weight: bold; 
+}
+
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+}
+
+.tlist {
+  font-family: verdana; 
+  color: #000; 
+  text-transform: uppercase;
+  font-weight: bold; 
+}

@@ -1,0 +1,48 @@
+<div class="modal fade" id="modal-wikipedia" tabindex="-1" aria-labelledby="modal-wikipedia-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-wikipedia-label"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  function fetchWikipediaData(title) {
+    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${title}`;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        document.querySelector('#modal-wikipedia .modal-title').textContent = data.title;
+        document.querySelector('#modal-wikipedia .modal-body').innerHTML = `
+          <p>${data.extract}</p>
+          <a href="${data.content_urls.desktop.page}" target="_blank" rel="noopener noreferrer">Read more on Wikipedia</a>
+        `;
+      })
+      .catch(error => {
+        document.querySelector('#modal-wikipedia .modal-body').textContent = 'Failed to load data from Wikipedia';
+        console.error(error);
+      });
+  }
+  
+  const wikipediaLinks = document.querySelectorAll('.wikipedia-link');
+  wikipediaLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const title = link.dataset.title;
+      if (title) {
+        document.querySelector('#modal-wikipedia').classList.add('show');
+        document.querySelector('body').classList.add('modal-open');
+        fetchWikipediaData(title);
+      }
+    });
+  });
+  </script>
+  

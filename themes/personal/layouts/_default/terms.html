@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<div class="tag-cloud">
+  {{ $tags := .Site.Taxonomies.tags }}
+  {{ range $name, $taxonomy := $tags }}
+      {{ $weight := len $taxonomy.Pages }}
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" style="font-size: {{ mul $weight 10 }}px">{{ $name }}</a>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

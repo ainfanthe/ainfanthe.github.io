@@ -1,0 +1,53 @@
+{{ partial "header.html" . }}
+
+<div>{{ .Content }}</div>
+
+{{ if .IsHome }}
+  <hr class="separador">
+  <section style="padding-bottom: 10px;">
+    <div class="gfgg">
+      <a href="#" style="text-decoration: none; padding: 3px; padding-right: 10px;">Escritos u obras concebidas</a>
+    </div>
+  </section>
+{{ end }}
+
+{{ if not .IsHome }}
+  <ul>
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}{{ $pages = where .Site.RegularPages "Type" "escritos" }}{{ end }}
+    {{ range $i, $page := (where $pages "Section" "!=" "") }}
+      <li id="{{ if mod $i 2 }}even{{ else }}odd{{ end }}" style="margin-bottom: 10px;">
+        <span class="date">{{ $page.Date.Format "2006/01/02" }}</span>
+        <a class="tlist" href="{{ $page.RelPermalink }}" style="font-weight: bold;">{{ $page.Title | markdownify }}</a>
+        {{ $page.Summary | truncate 180 }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+{{ if .IsHome }}
+  <ul>
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}{{ $pages = where .Site.RegularPages "Type" "escritos" }}{{ end }}
+    {{ $count := 0 }}
+    {{ range $i, $page := (where $pages "Section" "escritos") }}
+      {{ if lt $count 5 }}
+        <li id="{{ if mod $i 2 }}even{{ else }}odd{{ end }}" style="margin-bottom: 10px;">
+          <span class="date">{{ $page.Date.Format "2006/01/02" }}</span>
+          <a class="tlist" href="{{ $page.RelPermalink }}">{{ $page.Title | markdownify }}</a>
+          {{ $page.Summary | truncate 100 }}
+        </li>
+        {{ $count = add $count 1 }}
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  <hr>
+  <br>
+  <a id="urls" href="caravaggio">{ Caravaggio's Cephalophobic Obsession }</a>
+  <br>
+  <br>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vitae repellat quaerat tempora eveniet vel assumenda repellendus libero consequatur impedit excepturi doloremque atque provident consectetur velit porro.
+{{ end }}
+
+{{ partial "footer.html" . }}

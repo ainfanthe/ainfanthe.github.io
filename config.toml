@@ -1,0 +1,56 @@
+title = 'Weltanschauung'
+theme = "personal"
+LanguageCode = "es"
+baseurl = "/"
+ignoreFiles = [ "\\.Rmd$", "\\.Rmarkdown$", "_cache$" ]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+note = "/note/:year/:month/:day/:slug/"
+post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Autorretrete"
+url = "about/"
+weight = 2
+
+[[menu.main]]
+name = "Scriptorium"
+url = "escritos/"
+weight = 3
+
+[[menu.main]]
+name = "Collections"
+url = ""
+weight = 4
+
+[[menu.footer]]
+name = "Google"
+url = "https://www.google.com/"
+
+[params]
+footer = "&copy; [Felipe]() { {Year} }, reach out to me: [GitHub](https://github.com/ainfanthe) | [E-mail](mailto:ainfanteh@unal.edu.co) | [Mastodon](https://mastodon.la/@aninfant) | [Scienti]() | [Vitae](/curriculum)"
+customCss = ["css/sidenote.css"]
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+hardWraps = true
+unsafe = true
+format = "<a href=\"#%s\">%s</a>"
+
+[output."blogdown::html_page"]
+toc = true
+
+[params.toc]
+  id = "toc"
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

@@ -1,0 +1,50 @@
+{{ partial "header.html" . }}
+
+<div class="article-meta">
+  <h1><span class="title"></span></h1>
+  <!-- {{ with .Params.author }}
+  <h2 class="author">{{ . }}</h2>
+  {{ end }} -->
+  
+  {{ if (gt .Params.date 0) }}
+  <h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>
+  {{ end }}
+</div>
+
+<main>
+  <div>{{- .TableOfContents | safeHTML -}}</div>
+  {{ .Content }}
+  <!-- {{- .Content | replaceRE "<h([1-6])(.*?)>(.*?)</h([1-6])>" "<div class=\"gfgg\"><a>$3</a></div>" | safeHTML -}} -->
+  <!-- {{- .Content | replaceRE "<h([1])(.*?)id=\"(.*?)\"(.*?)>(.*?)</h([1])>" "<div class=\"gfgg\"><a class=\"title\" href=\"#$3\">$5</a></div>" | safeHTML -}} -->
+</main>
+
+<style>
+  img, iframe, video {
+    max-width: 100%;
+  }
+</style>
+
+{{ if .Section }}
+{{ with site.RegularPages.Related . }}
+<aside style="background-color: #dadada; color: black; padding: 10px; border-radius: 3px;">
+  <details open>
+    <summary>Related Content</summary>
+    <ul>
+      {{ range . | first 5 }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </details>
+  {{ end }}
+</aside>
+
+<br>
+
+<nav class="post-nav">
+  <span class="nav-next">{{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+  {{ end }}</span>
+</nav>
+{{ end }}
+
+{{ partial "footer.html" . }}
